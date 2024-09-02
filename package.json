@@ -1,0 +1,22 @@
+{
+  "name": "js-exercises",
+  "version": "1.0.0",
+  "module": "true",
+  "description": "Hand-in for International Web Dev Cphbusiness",
+  "scripts": {
+    "all": "npm i && npm run function-objects && npm run classes && npm run arrays && npm run arrays-objects",
+    "function-objects": "tsx functions-objects.ts",
+    "classes": "tsx classes.ts",
+    "arrays": "tsx arrays.ts",
+    "arrays-objects": "tsx arrays-objects.ts",
+    "format": "npx prettier . --write"
+  },
+  "author": "Octavian Roman",
+  "devDependencies": {
+    "prettier": "3.3.3",
+    "tsx": "^4.19.0"
+  },
+  "dependencies": {
+    "nanoid": "^5.0.7"
+  }
+}

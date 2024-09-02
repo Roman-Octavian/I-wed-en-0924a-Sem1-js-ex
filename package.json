@@ -9,10 +9,12 @@
     "classes": "tsx classes.ts",
     "arrays": "tsx arrays.ts",
     "arrays-objects": "tsx arrays-objects.ts",
-    "format": "npx prettier . --write"
+    "format": "npx prettier . --write",
+    "prepare": "husky"
   },
   "author": "Octavian Roman",
   "devDependencies": {
+    "husky": "^9.1.5",
     "prettier": "3.3.3",
     "tsx": "^4.19.0"
   },

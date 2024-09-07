@@ -4,13 +4,15 @@
   "type": "module",
   "description": "Hand-in for International Web Dev Cphbusiness",
   "scripts": {
-    "all": "npm i && npm run day-1 && npm run day-2",
+    "all": "npm i && npm run day-1 && npm run day-2 && npm run day-3 && npm run day-4",
     "day-1": "npm run function-objects && npm run classes && npm run arrays && npm run arrays-objects",
     "function-objects": "tsx day-1/functions-objects.ts",
     "classes": "tsx day-1/classes.ts",
     "arrays": "tsx day-1/arrays.ts",
     "arrays-objects": "tsx day-1/arrays-objects.ts",
-    "day-2": "echo 'For the TODO and duck site, use the VSCode extension to run them. I tried to run it from here but it does not run all that well because this is all server-side'",
+    "day-2": "echo 'Visit https://roman-octavian.github.io/I-wed-en-0924a-Sem1-js-ex/ for the day-2 pages'",
+    "day-3": "echo 'NOT IMPLEMENTED'",
+    "day-4": "echo 'NOT IMPLEMENTED'",
     "format": "npx prettier . --write",
     "prepare": "husky"
   },

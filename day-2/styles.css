@@ -3,9 +3,9 @@
 nav {
   display: flex;
   justify-content: flex-end;
-  height: 7vh;
   width: 100%;
   background-color: white;
+  height: 3rem;
 }
 
 #logo {
@@ -13,21 +13,24 @@ nav {
   align-items: center;
 }
 
-#logo > img:hover {
-  height: 40px;
-  width: 40px;
-}
-
 #text {
   display: flex;
   align-items: center;
-  margin-left: 1vw;
+  margin-left: 8px;
 }
 
 #text > p {
   color: rgb(0, 132, 255);
   font-size: 1.5rem;
   font-family: 'Montserrat', monospace;
+}
+
+#card-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 8px;
+  padding: 0px;
 }
 
 #nav-ul {
@@ -44,16 +47,32 @@ nav {
   text-decoration: none;
   color: rgb(0, 132, 255);
   font-size: 1rem;
-  font-family: 'Major Mono Display', monospace;
+  font-family: 'Montserrat', monospace;
 }
 
 .nav-link:hover {
   text-decoration: underline;
   color: rgb(0, 38, 255);
-  font-family: 'Major Mono Display', monospace;
+  font-family: 'Montserrat', monospace;
   animation-name: size;
   animation-duration: 100ms;
   animation-fill-mode: forwards;
+}
+
+.card {
+  font-family: 'Montserrat', monospace;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 8px;
+  border-radius: 6px;
+  min-height: 80px;
+  min-width: 200px;
+  background-color: #daf0f8;
+  font-size: 1.5rem;
+}
+
+.card:hover {
+  background-color: #adbec4;
 }
 
 @keyframes size {
@@ -72,21 +91,33 @@ nav {
 }
 
 main {
+  display: flex;
   margin-top: 2rem;
   width: 100%;
+  justify-content: center;
 }
 
 #main-content {
   display: flex;
-  justify-self: center;
-  align-self: center;
   flex-direction: column;
   padding-left: 12vw;
   padding-right: 12vw;
+  width: 100%;
+  max-width: 900px;
+}
+
+#textarea {
+  height: 10vh;
 }
 
 #input {
-  height: 20vh;
+  height: 2rem;
+}
+
+.label {
+  font-family: 'Montserrat', monospace;
+  font-size: 1.5rem;
+  margin-bottom: 4px;
 }
 
 #submit {
@@ -97,12 +128,20 @@ main {
   align-self: center;
 }
 
+#container {
+  margin-top: 8vh;
+}
+
+#select {
+  height: 3rem;
+}
+
 /* MEDIA QUERIES FOR RESPONSIVE DESIGN START HERE */
 
 @media only screen and (min-width: 1px) and (max-width: 600px) {
   /* START NAV-BAR */
 
-  #logo {
+  #text {
     display: none;
   }
 
@@ -120,11 +159,6 @@ main {
 
 @media only screen and (min-width: 601px) and (max-width: 992px) {
   /* START NAV-BAR */
-
-  #logo {
-    height: 35px;
-    width: 35px;
-  }
 
   #text > p {
     font-size: 1.6rem;

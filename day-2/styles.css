@@ -136,6 +136,12 @@ main {
   height: 3rem;
 }
 
+#translate {
+  transform: translate(10px, 39px);
+  pointer-events: none;
+  font-size: 1.2rem;
+}
+
 /* MEDIA QUERIES FOR RESPONSIVE DESIGN START HERE */
 
 @media only screen and (min-width: 1px) and (max-width: 600px) {

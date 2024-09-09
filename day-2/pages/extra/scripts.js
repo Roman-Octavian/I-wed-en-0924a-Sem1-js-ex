@@ -12,14 +12,21 @@ const SELECT_ITEMS = [
 ];
 
 const select = document.getElementById('select');
-
 const ul = document.getElementById('ul');
 
-function listener(item) {
+SELECT_ITEMS.forEach((item) => {
+  const newItem = document.createElement('option');
+  newItem.value = item;
+  newItem.textContent = item;
+  select.appendChild(newItem);
+});
+
+select.addEventListener('change', (event) => {
+  console.log(event.target.value);
+  const item = event.target.value;
   const preexistingItems = [];
 
   if (ul.children != null && ul.children.length > 0) {
-    console.log(ul.children);
     for (const child of ul.children) {
       preexistingItems.push(child.textContent);
     }
@@ -33,16 +40,11 @@ function listener(item) {
     newItem.textContent = item;
     ul.appendChild(newItem);
   }
-}
 
-if (select != null) {
-  SELECT_ITEMS.forEach((item) => {
-    const newItem = document.createElement('option');
-    newItem.value = item;
-    newItem.textContent = item;
-    newItem.addEventListener('click', (e) => {
-      listener(e.target.value);
-    });
-    select.appendChild(newItem);
-  });
-}
+  /* Set value to nothing because select HTML tag does not have any native cross-browser events for
+  an option that has already been selected and only Firefox supports events directly on options */
+  select.value = undefined;
+});
+
+// Default to nothing to allow events selection of first item
+select.value = undefined;

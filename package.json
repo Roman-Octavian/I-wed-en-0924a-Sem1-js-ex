@@ -6,7 +6,7 @@
   "scripts": {
     "all": "npm i && npm run cli && npm run site",
     "cli": "tsx cli/day-1/functions-objects.ts && tsx cli/day-1/classes.ts && tsx cli/day-1/arrays.ts && tsx cli/day-1/arrays-objects.ts && tsx cli/day-3/loops-arrays.ts && tsx cli/day-3/conditionals.ts && tsx cli/day-3/higher-lower.ts",
-    "site": "echo \"Visit https://roman-octavian.github.io/I-wed-en-0924a-Sem1-js-ex/ for the site\" && live-server ./site",
+    "site": "echo \"You can also visit https://roman-octavian.github.io/I-wed-en-0924a-Sem1-js-ex/ for the deployment instead\" && live-server ./site",
     "format": "npx prettier . --write",
     "prepare": "husky"
   },

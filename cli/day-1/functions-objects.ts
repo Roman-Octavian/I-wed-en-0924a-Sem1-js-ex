@@ -1,3 +1,5 @@
+console.log('\n+++++++++++++++++ DAY 1: functions-objects +++++++++++++++++\n');
+
 /**
  * Create a javascript function that takes firstname and lastname as 2 parameters and uses
  * console.log() to output the person's name. Check that it works and is printet correctly.

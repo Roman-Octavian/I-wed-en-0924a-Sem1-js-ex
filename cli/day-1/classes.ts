@@ -1,3 +1,5 @@
+console.log('\n+++++++++++++++++ DAY 1: classes +++++++++++++++++\n');
+
 // Create a Cat class with name, color, breed.
 class Cat {
   private name: string;

@@ -1,5 +1,7 @@
 import readline from 'readline';
 
+console.log('\n+++++++++++++++++ DAY 3: higher-lower +++++++++++++++++\n');
+
 const random_number = Math.floor(Math.random() * 100 + 1);
 
 let lastGuess: number | undefined;
@@ -19,14 +21,14 @@ const takeUserInput = async function (query: string): Promise<string> {
 };
 
 while (true) {
-  const guess = Number(await takeUserInput('Provide a number between 1 and 100\n'));
+  const guess = Number(await takeUserInput('Provide a number between 1 and 100\n\n'));
 
   if (guess == null || isNaN(guess) || guess < 1 || guess > 100) {
     console.log(`\n ${guess} is not a valid number!`);
   } else {
     if (guess === random_number) {
       console.log(
-        `\n\n You got it right! The number was ${random_number}\nGuesses used: ${guessCount}`,
+        `\nYou got it right! The number was ${random_number}\n\nGuesses used: ${guessCount}`,
       );
       break;
     }
@@ -34,7 +36,7 @@ while (true) {
     guessCount += 1;
     lastGuess = guess;
 
-    console.log(`${guess > random_number ? 'Lower' : 'Higher'} than ${guess}!\n`);
+    console.log(`\n${guess > random_number ? 'LOWER' : 'HIGHER'} than ${guess}!\n`);
   }
 }
 

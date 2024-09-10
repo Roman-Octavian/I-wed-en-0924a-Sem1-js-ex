@@ -1,3 +1,5 @@
+console.log('\n+++++++++++++++++ DAY 3: conditionals +++++++++++++++++\n');
+
 /**
  * Create a function, findLargest, that takes 4 numbers as 4 parameters and returns the largest of
  * the 4 numbers.
@@ -34,4 +36,4 @@ function checkIfFirstArgIsInRange(
 console.log(
   `Is -4 in the range of -27 and 98? Response: ${checkIfFirstArgIsInRange(-4, -27, 98)}\n`,
 );
-console.log(`Is 7 in the range of 0 and 4? Response: ${checkIfFirstArgIsInRange(7, 0, 4)}\n`);
+console.log(`Is 7 in the range of 0 and 4? Response: ${checkIfFirstArgIsInRange(7, 0, 4)}`);

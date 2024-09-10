@@ -13,10 +13,18 @@ nav {
   align-items: center;
 }
 
+#logo:hover {
+  cursor: pointer;
+}
+
 #text {
   display: flex;
   align-items: center;
   margin-left: 8px;
+}
+
+#text:hover {
+  cursor: pointer;
 }
 
 #text > p {
@@ -140,6 +148,17 @@ main {
   transform: translate(10px, 39px);
   pointer-events: none;
   font-size: 1.2rem;
+}
+
+#ul {
+  place-self: center;
+}
+
+#remove {
+  width: 100%;
+  max-width: 300px;
+  height: 35px;
+  place-self: center;
 }
 
 /* MEDIA QUERIES FOR RESPONSIVE DESIGN START HERE */

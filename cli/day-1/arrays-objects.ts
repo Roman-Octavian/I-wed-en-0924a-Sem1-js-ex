@@ -1,3 +1,5 @@
+console.log('\n+++++++++++++++++ DAY 1: arrays-objects +++++++++++++++++\n');
+
 import { nanoid } from 'nanoid';
 
 // Define a Student object with properties: name, id, and grades (an array of numbers).

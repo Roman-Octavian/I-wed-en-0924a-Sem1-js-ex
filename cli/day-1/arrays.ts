@@ -1,3 +1,5 @@
+console.log('\n+++++++++++++++++ DAY 1: arrays +++++++++++++++++\n');
+
 // Create an array with 5 names. Print out the first element (name) using console.log()
 const arr1 = ['Bob', 'Rob', 'Job', 'Mob', 'Cob'];
 

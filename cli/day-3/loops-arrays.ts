@@ -1,3 +1,5 @@
+console.log('\n+++++++++++++++++ DAY 3: loops-arrays +++++++++++++++++\n');
+
 /* Create an array of with the following values: 'Peter', 7, 'Marianne', true, 'Helle' and 8. Notice
 it is a mix of strings, numbers and a boolean.
 Use a loop to iterate over the array and generate the following in the console:

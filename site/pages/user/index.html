@@ -1,47 +1,25 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#24292E" />
-    <meta name="description" content="Highlighted numbers page" />
-    <meta property="og:title" content="Highlighted numbers" />
+    <meta name="description" content="User setup" />
+    <meta name="author" content="Roman Octavian" />
+    <meta property="og:title" content="User" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_GB" />
-    <link rel="icon" href="../../public/favicon-todo.ico" />
+    <link rel="icon" href="../../public/favicon-duck.ico" />
     <link rel="stylesheet" href="../../styles.css" />
-    <title>Highlighted numbers</title>
-    <style>
-      .number {
-        margin: 5px;
-        padding: 10px;
-        display: inline-block;
-        cursor: pointer;
-      }
-      .even {
-        background-color: lightblue;
-      }
-      .odd {
-        background-color: lightcoral;
-      }
-      .highlight {
-        border: 2px solid black;
-      }
-    </style>
+    <title>User "Auth"</title>
   </head>
   <body>
     <nav id="navbar">
       <div id="logo" onclick="window.open('../../index.html', '_self')">
-        <img
-          id="logo-img"
-          src="../../public/shit.png"
-          alt="A pile of shit"
-          width="40"
-          height="40"
-        />
+        <img id="logo-img" src="../../public/duck.png" alt="A duck" width="40" height="40" />
       </div>
       <div id="text" onclick="window.open('../../index.html', '_self')">
-        <p>Highlighted numbers</p>
+        <p>User</p>
       </div>
       <ul id="nav-ul">
         <li><a class="nav-link" href="../user/index.html">User</a></li>
@@ -52,7 +30,19 @@
         <li><a class="nav-link" href="../highlighted-numbers/index.html">Highlight</a></li>
       </ul>
     </nav>
-    <div id="number-list"></div>
-    <script src="scripts.js"></script>
+    <main>
+      <div id="main-content">
+        <form id="form">
+          <label for="name">User name:</label>
+          <input id="name" type="text" />
+          <label for="email">Email:</label>
+          <input required id="email" type="text" />
+          <button id="submit" type="submit">Submit</button>
+          <p id="error"></p>
+          <p id="success"></p>
+        </form>
+      </div>
+    </main>
+    <script type="module" src="scripts.js"></script>
   </body>
 </html>

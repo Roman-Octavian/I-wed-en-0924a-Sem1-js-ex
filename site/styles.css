@@ -161,12 +161,55 @@ main {
   place-self: center;
 }
 
-/* MEDIA QUERIES FOR RESPONSIVE DESIGN START HERE */
+#form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  place-self: center;
+  gap: 5px;
+}
+
+#error {
+  display: none;
+  color: red;
+  font-size: 1.2rem;
+}
+
+#success {
+  display: none;
+  color: green;
+  font-size: 1.2rem;
+}
+
+.visible {
+  display: block;
+}
+
+#answer {
+  margin-left: 15px;
+  border: none;
+  background-color: white;
+  max-height: 50px;
+  border-radius: 16px;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  color: rgb(0, 132, 255);
+}
+
+#answer:hover {
+  background: rgb(0, 38, 255);
+  color: white;
+}
 
 @media only screen and (min-width: 1px) and (max-width: 600px) {
-  /* START NAV-BAR */
-
   #text {
+    display: none;
+  }
+
+  #logo {
     display: none;
   }
 
@@ -175,23 +218,33 @@ main {
     text-indent: 2vw;
   }
 
+  .nav-link {
+    font-size: 11px;
+  }
+
+  #answer {
+    font-size: 12px;
+  }
+
   .nav-link:hover {
     animation: none;
   }
-
-  /* END NAV-BAR */
 }
 
 @media only screen and (min-width: 601px) and (max-width: 992px) {
-  /* START NAV-BAR */
+  #text {
+    display: none;
+  }
 
-  #text > p {
-    font-size: 1.6rem;
+  .nav-link {
+    font-size: 13px;
+  }
+
+  #answer {
+    font-size: 16px;
   }
 
   .nav-link:hover {
     animation: none;
   }
-
-  /* END NAV-BAR */
 }

@@ -57,11 +57,11 @@ window.addEventListener('load', () => {
   const localStorageName = localStorage.getItem('name');
   let name;
   if (localStorageName == null) {
-    //name = prompt('What is your name?');
+    name = prompt('What is your name?');
   } else {
     name = localStorageName;
   }
-  //alert(`Mr. Duck says: Hello ${name}!`);
+  alert(`Mr. Duck says: Hello ${name}!`);
 });
 
 document.getElementById('answer').addEventListener('click', async () => {

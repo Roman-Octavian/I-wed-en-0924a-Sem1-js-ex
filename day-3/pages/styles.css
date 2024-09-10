@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  background-color: white;
+  height: 3rem;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+}
+
+#text {
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+}
+
+#text > p {
+  color: rgb(0, 132, 255);
+  font-size: 1.5rem;
+  font-family: 'Montserrat', monospace;
+}
+
+#card-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 8px;
+  padding: 0px;
+}
+
+#nav-ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  align-items: center;
+  margin-right: 2rem;
+  margin-left: auto;
+  text-indent: 2vw;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: rgb(0, 132, 255);
+  font-size: 1rem;
+  font-family: 'Montserrat', monospace;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: rgb(0, 38, 255);
+  font-family: 'Montserrat', monospace;
+  animation-name: size;
+  animation-duration: 100ms;
+  animation-fill-mode: forwards;
+}
+
+.card {
+  font-family: 'Montserrat', monospace;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 8px;
+  border-radius: 6px;
+  min-height: 80px;
+  min-width: 200px;
+  background-color: #daf0f8;
+  font-size: 1.5rem;
+}
+
+.card:hover {
+  background-color: #adbec4;
+}
+
+@keyframes size {
+  25% {
+    font-size: 1.1rem;
+  }
+  50% {
+    font-size: 1.15rem;
+  }
+  75% {
+    font-size: 1.2rem;
+  }
+  100% {
+    font-size: 1.25rem;
+  }
+}
+
+main {
+  display: flex;
+  margin-top: 2rem;
+  width: 100%;
+  justify-content: center;
+}
+
+#main-content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 12vw;
+  padding-right: 12vw;
+  width: 100%;
+  max-width: 900px;
+}
+
+#textarea {
+  height: 10vh;
+}
+
+#input {
+  height: 2rem;
+}
+
+.label {
+  font-family: 'Montserrat', monospace;
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+}
+
+#submit {
+  width: 150px;
+  height: 40px;
+  margin-top: 20px;
+  justify-self: center;
+  align-self: center;
+}
+
+#container {
+  margin-top: 8vh;
+}
+
+#select {
+  height: 3rem;
+}
+
+#translate {
+  transform: translate(10px, 39px);
+  pointer-events: none;
+  font-size: 1.2rem;
+}
+
+#ul {
+  place-self: center;
+}
+
+#remove {
+  width: 100%;
+  max-width: 300px;
+  height: 35px;
+  place-self: center;
+}
+
+/* MEDIA QUERIES FOR RESPONSIVE DESIGN START HERE */
+
+@media only screen and (min-width: 1px) and (max-width: 600px) {
+  /* START NAV-BAR */
+
+  #text {
+    display: none;
+  }
+
+  #nav-ul {
+    margin-left: auto;
+    text-indent: 2vw;
+  }
+
+  .nav-link:hover {
+    animation: none;
+  }
+
+  /* END NAV-BAR */
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  /* START NAV-BAR */
+
+  #text > p {
+    font-size: 1.6rem;
+  }
+
+  .nav-link:hover {
+    animation: none;
+  }
+
+  /* END NAV-BAR */
+}

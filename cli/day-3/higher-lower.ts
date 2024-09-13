@@ -5,7 +5,6 @@ console.log('\n+++++++++++++++++ DAY 3: higher-lower +++++++++++++++++\n');
 // Randomly select a number between 1 and 100
 const random_number = Math.floor(Math.random() * 100 + 1);
 
-let lastGuess: number | undefined;
 let guessCount: number = 0;
 
 const rl = readline.createInterface({
@@ -38,7 +37,6 @@ while (true) {
     }
 
     guessCount += 1;
-    lastGuess = guess;
 
     // Let the user know if the guess is higher or lower than the randomly selected number, and ask
     // for a new guess, if the guess was not correct.
